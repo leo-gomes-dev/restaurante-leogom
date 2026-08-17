@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Restaurante Saboroso!</title>
+    <title>Restaurante Saboroso | Culinária Artesanal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Site do restaurante fictício Saboroso desenvolvido no curso de JavaScript da Leogomes Dev Web "
+      content="Site do restaurante fictício Saboroso desenvolvido no curso de JavaScript da Leogomes Dev Web"
     />
     <meta name="author" content="https://leogomesdev.com" />
 
@@ -16,40 +16,23 @@
 
     <meta name="theme-color" content="#FBB448" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-      rel="stylesheet"
-    />
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet" />
+    <link href="https://googleapis.com" rel="stylesheet" />
 
-    <!-- Animate.css -->
+    <!-- Estilos do Template -->
     <link rel="stylesheet" href="css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css" />
-    <!-- Themify Icons-->
     <link rel="stylesheet" href="css/themify-icons.css" />
-    <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
-
-    <!-- Bootstrap DateTimePicker -->
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-
-    <!-- Owl Carousel  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-
-    <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
     <![endif]-->
@@ -59,42 +42,29 @@
     <div class="gtco-loader"></div>
 
     <div id="page">
+      <!-- Navegação Principal -->
       <nav class="gtco-nav" role="navigation">
         <div class="gtco-container">
           <div class="row">
             <div class="col-sm-4 col-xs-12">
               <div id="gtco-logo">
-                <a href="index.html"
-                  >Saboroso
-                  <em>!</em>
-                </a>
+                <a href="index.html">Saboroso<em>!</em></a>
               </div>
             </div>
             <div class="col-xs-8 text-right menu-1">
               <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                  <a href="services.html">Serviços</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contato</a>
-                </li>
-                <li class="btn-cta">
-                  <a href="reservation.html">
-                    <span>Reserva</span>
-                  </a>
-                </li>
+                <li class="active"><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li class="btn-cta"><a href="reservation.html"><span>Reserva</span></a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
 
+      <!-- Banner de Destaque -->
       <header
         id="gtco-header"
         class="gtco-cover gtco-cover-md"
@@ -107,100 +77,60 @@
           <div class="row">
             <div class="col-md-12 col-md-offset-0 text-left">
               <div class="row row-mt-15em">
-                <div
-                  class="col-md-7 mt-text animate-box"
-                  data-animate-effect="fadeInUp"
-                >
-                  <span class="intro-text-small"
-                    >Feito por
-                    <a href="https://leogomesdev.com" target="_blank"
-                      >Leo Gomes</a
-                    >
-                  </span>
-                  <h1 class="cursive-font">Restaurante Saboroso!</h1>
+                <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+                  <span class="intro-text-small">Apresentado por <a href="https://leogomesdev.com" target="_blank">Leo Gomes</a></span>
+                  <h1 class="cursive-font">Sabores que Conectam!</h1>
                 </div>
-                <div
-                  class="col-md-4 col-md-push-1 animate-box"
-                  data-animate-effect="fadeInRight"
-                >
+                
+                <!-- Formulário de Reserva -->
+                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                   <div class="form-wrap">
                     <div class="tab">
                       <div class="tab-content">
-                        <div
-                          class="tab-content-inner active"
-                          data-content="signup"
-                        >
-                          <h3 class="cursive-font">Reserva de mesa</h3>
+                        <div class="tab-content-inner active" data-content="signup">
+                          <h3 class="cursive-font">Reserve sua Mesa</h3>
                           <form action="#">
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <label for="inputName">Nome</label>
-                                <input
-                                  type="text"
-                                  id="inputName"
-                                  name="name"
-                                  class="form-control"
-                                />
+                                <label for="inputName">Nome Completo</label>
+                                <input type="text" id="inputName" name="name" class="form-control" placeholder="Seu nome" required />
                               </div>
                             </div>
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <label for="inputEmail">E-mail</label>
-                                <input
-                                  type="email"
-                                  id="inputEmail"
-                                  name="email"
-                                  class="form-control"
-                                />
+                                <label for="inputEmail">E-mail de Contato</label>
+                                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="seu@email.com" required />
                               </div>
                             </div>
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <label for="inputPeople">Pessoas</label>
-                                <select
-                                  id="inputPeople"
-                                  name="people"
-                                  class="form-control"
-                                >
+                                <label for="inputPeople">Quantidade de Pessoas</label>
+                                <select id="inputPeople" name="people" class="form-control" required>
                                   <option value="">-- selecione --</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5+</option>
+                                  <option value="1">1 Pessoa</option>
+                                  <option value="2">2 Pessoas</option>
+                                  <option value="3">3 Pessoas</option>
+                                  <option value="4">4 Pessoas</option>
+                                  <option value="5">5+ Pessoas</option>
                                 </select>
                               </div>
                             </div>
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <label for="inputDate">Data</label>
-                                <input
-                                  type="text"
-                                  id="inputDate"
-                                  name="date"
-                                  class="form-control"
-                                />
+                                <label for="inputDate">Data da Reserva</label>
+                                <input type="text" id="inputDate" name="date" class="form-control" placeholder="DD/MM/AAAA" required />
                               </div>
                             </div>
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <label for="inputTime">Hora</label>
-                                <input
-                                  type="text"
-                                  id="inputTime"
-                                  name="time"
-                                  class="form-control"
-                                />
+                                <label for="inputTime">Horário</label>
+                                <input type="text" id="inputTime" name="time" class="form-control" placeholder="00:00" required />
                               </div>
                             </div>
 
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <input
-                                  type="submit"
-                                  class="btn btn-primary btn-block"
-                                  value="Reservar Agora"
-                                />
+                                <input type="submit" class="btn btn-primary btn-block" value="Confirmar Reserva" />
                               </div>
                             </div>
                           </form>
@@ -209,293 +139,189 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </header>
-
+      <!-- SEÇÃO: PRATOS POPULARES -->
       <div class="gtco-section">
         <div class="gtco-container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
               <h2 class="cursive-font primary-color">Pratos Populares</h2>
               <p>
-                Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num
-                copo é motivis de denguis. Quem num gosta di mé, boa gentis num
-                é.
+                Conheça as especialidades mais pedidas da nossa cozinha, preparadas com ingredientes selecionados e o toque exclusivo do nosso chef.
               </p>
             </div>
           </div>
           <div class="row">
+            
+            <!-- Card 1: Bife de Costela -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+              <a href="images/img_1.jpg" class="fh5co-card-item image-popup" aria-label="Visualizar imagem do Bife de Costela com molho">
                 <figure>
-                  <div class="overlay">
-                    <i class="ti-plus"></i>
-                  </div>
-                  <img
-                    src="images/img_1.jpg"
-                    alt="Image"
-                    class="img-responsive"
-                  />
+                  <div class="overlay"><i class="ti-plus"></i></div>
+                  <img src="images/img_1.jpg" alt="Bife de Costela ao molho rústico acompanhado de ervas" class="img-responsive" />
                 </figure>
                 <div class="fh5co-text">
-                  <h2>Bife de Costela com molho</h2>
-                  <p>
-                    Vide electram sadipscing et per. Aenean aliquam molestie
-                    leo, vitae iaculis nisl.
-                  </p>
-                  <p>
-                    <span class="price cursive-font">R$35,69</span>
-                  </p>
+                  <h2>Bife de Costela com Molho</h2>
+                  <p>Corte nobre grelhado na brasa, servido com redução de molho artesanal e ervas finas.</p>
+                  <p><span class="price cursive-font">R$ 35,69</span></p>
                 </div>
               </a>
             </div>
+            
+            <!-- Card 2: Hambúrguer com Fritas -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <a href="images/img_3.jpg" class="fh5co-card-item image-popup">
+              <a href="images/img_2.jpg" class="fh5co-card-item image-popup" aria-label="Visualizar imagem do Hambúrguer com Fritas">
                 <figure>
-                  <div class="overlay">
-                    <i class="ti-plus"></i>
-                  </div>
-                  <img
-                    src="images/img_2.jpg"
-                    alt="Image"
-                    class="img-responsive"
-                  />
+                  <div class="overlay"><i class="ti-plus"></i></div>
+                  <img src="images/img_2.jpg" alt="Hambúrguer artesanal com queijo derretido e batatas fritas crocantes" class="img-responsive" />
                 </figure>
                 <div class="fh5co-text">
                   <h2>Hambúrguer com Fritas</h2>
-                  <p>
-                    Vide electram sadipscing et per. Aenean aliquam molestie
-                    leo, vitae iaculis nisl.
-                  </p>
-                  <p>
-                    <span class="price cursive-font">R$22,80</span>
-                  </p>
+                  <p>Blend artesanal de 180g, queijo cheddar derretido, alface fresca e batatas palito crocantes.</p>
+                  <p><span class="price cursive-font">R$ 22,80</span></p>
                 </div>
               </a>
             </div>
 
+            <!-- Card 3: Chilli com Carne -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <a href="images/img_5.jpg" class="fh5co-card-item image-popup">
+              <a href="images/img_5.jpg" class="fh5co-card-item image-popup" aria-label="Visualizar imagem do Chilli com Carne">
                 <figure>
-                  <div class="overlay">
-                    <i class="ti-plus"></i>
-                  </div>
-                  <img
-                    src="images/img_5.jpg"
-                    alt="Image"
-                    class="img-responsive"
-                  />
+                  <div class="overlay"><i class="ti-plus"></i></div>
+                  <img src="images/img_5.jpg" alt="Tigela de Chilli com carne moída temperada e nachos" class="img-responsive" />
                 </figure>
                 <div class="fh5co-text">
                   <h2>Chilli com Carne</h2>
-                  <p>
-                    Vide electram sadipscing et per. Aenean aliquam molestie
-                    leo, vitae iaculis nisl.
-                  </p>
-                  <p>
-                    <span class="price cursive-font">R$29,40</span>
-                  </p>
+                  <p>Carne moída selecionada, feijões vermelhos cozidos ao molho picante e nachos crocantes.</p>
+                  <p><span class="price cursive-font">R$ 29,40</span></p>
                 </div>
               </a>
             </div>
+
           </div>
         </div>
       </div>
 
+      <!-- SEÇÃO: NOSSOS SERVIÇOS -->
       <div id="gtco-features">
         <div class="gtco-container">
           <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box"
-            >
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
               <h2 class="cursive-font">Nossos Serviços</h2>
-              <p>
-                Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
-                então bota uma pinga aí cumpadi!
-              </p>
+              <p>Oferecemos uma infraestrutura completa para transformar sua refeição em um momento inesquecível.</p>
             </div>
           </div>
           <div class="row">
+            
             <div class="col-md-4 col-sm-6">
-              <div
-                class="feature-center animate-box"
-                data-animate-effect="fadeIn"
-              >
-                <span class="icon">
-                  <i class="ti-face-smile"></i>
-                </span>
-                <h3>Pessoas Felizes</h3>
-                <p>
-                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
-                  então bota uma pinga aí cumpadi!
-                </p>
+              <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                <span class="icon"><i class="ti-face-smile"></i></span>
+                <h3>Atendimento Humanizado</h3>
+                <p>Equipe altamente treinada para oferecer uma experiência acolhedora e eficiente do início ao fim.</p>
               </div>
             </div>
+            
             <div class="col-md-4 col-sm-6">
-              <div
-                class="feature-center animate-box"
-                data-animate-effect="fadeIn"
-              >
-                <span class="icon">
-                  <i class="ti-thought"></i>
-                </span>
+              <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                <span class="icon"><i class="ti-thought"></i></span>
                 <h3>Culinária Criativa</h3>
-                <p>
-                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
-                  então bota uma pinga aí cumpadi!
-                </p>
+                <p>Pratos desenvolvidos por gastrólogos, unindo técnicas tradicionais a sabores contemporâneos.</p>
               </div>
             </div>
+            
             <div class="col-md-4 col-sm-6">
-              <div
-                class="feature-center animate-box"
-                data-animate-effect="fadeIn"
-              >
-                <span class="icon">
-                  <i class="ti-truck"></i>
-                </span>
-                <h3>Delivery</h3>
-                <p>
-                  Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite
-                  então bota uma pinga aí cumpadi!
-                </p>
+              <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                <span class="icon"><i class="ti-truck"></i></span>
+                <h3>Delivery Rápido</h3>
+                <p>Embalagens térmicas especiais que garantem a temperatura e a qualidade do prato na sua casa.</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
-      <div
-        class="gtco-cover gtco-cover-sm"
-        style="background-image: url(images/img_bg_1.jpg)"
-        data-stellar-background-ratio="0.5"
-      >
+      <!-- SEÇÃO: BANNER DE DEPOIMENTO -->
+      <div class="gtco-cover gtco-cover-sm" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="gtco-container text-center">
           <div class="display-t">
             <div class="display-tc">
-              <h1>
-                &ldquo; Delegadis gente finis, bibendum egestas augue arcu ut
-                est. Cevadis im ampola pa arma uma pindureta!&rdquo;
-              </h1>
-              <p>&mdash; Mussum, Humorista.</p>
+              <h1>&ldquo;A gastronomia é a arte de usar a comida para criar felicidade e memórias inesquecíveis.&rdquo;</h1>
+              <p>&mdash; Alta Cozinha Internacional.</p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- SEÇÃO: ESTATÍSTICAS / CONTADOR ANIMADO -->
       <div id="gtco-counter" class="gtco-section">
         <div class="gtco-container">
           <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box"
-            >
-              <h2 class="cursive-font primary-color">Fatos</h2>
-              <p>
-                Delegadis gente finis, bibendum egestas augue arcu ut est.
-                Cevadis im ampola pa arma uma pindureta!
-              </p>
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+              <h2 class="cursive-font primary-color">Nossa Trajetória</h2>
+              <p>Números que refletem nossa dedicação diária à excelência e à satisfação dos nossos clientes.</p>
             </div>
           </div>
 
           <div class="row">
-            <div
-              class="col-md-3 col-sm-6 animate-box"
-              data-animate-effect="fadeInUp"
-            >
+            
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
               <div class="feature-center">
-                <span
-                  class="counter js-counter"
-                  data-from="0"
-                  data-to="5"
-                  data-speed="5000"
-                  data-refresh-interval="50"
-                  >1</span
-                >
+                <span class="counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50">1</span>
                 <span class="counter-label">Avaliação Média</span>
               </div>
             </div>
-            <div
-              class="col-md-3 col-sm-6 animate-box"
-              data-animate-effect="fadeInUp"
-            >
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
               <div class="feature-center">
-                <span
-                  class="counter js-counter"
-                  data-from="0"
-                  data-to="43"
-                  data-speed="5000"
-                  data-refresh-interval="50"
-                  >1</span
-                >
+                <span class="counter js-counter" data-from="0" data-to="43" data-speed="5000" data-refresh-interval="50">1</span>
                 <span class="counter-label">Opções de Pratos</span>
               </div>
             </div>
-            <div
-              class="col-md-3 col-sm-6 animate-box"
-              data-animate-effect="fadeInUp"
-            >
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
               <div class="feature-center">
-                <span
-                  class="counter js-counter"
-                  data-from="0"
-                  data-to="32"
-                  data-speed="5000"
-                  data-refresh-interval="50"
-                  >1</span
-                >
-                <span class="counter-label">Chefes de Cozinha</span>
+                <span class="counter js-counter" data-from="0" data-to="32" data-speed="5000" data-refresh-interval="50">1</span>
+                <span class="counter-label">Chefs de Cozinha</span>
               </div>
             </div>
-            <div
-              class="col-md-3 col-sm-6 animate-box"
-              data-animate-effect="fadeInUp"
-            >
+
+            <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
               <div class="feature-center">
-                <span
-                  class="counter js-counter"
-                  data-from="0"
-                  data-to="1985"
-                  data-speed="5000"
-                  data-refresh-interval="50"
-                  >1</span
-                >
-                <span class="counter-label">Desde</span>
+                <span class="counter js-counter" data-from="0" data-to="2018" data-speed="5000" data-refresh-interval="50">1</span>
+                <span class="counter-label">No Mercado Desde</span>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
+      <!-- SEÇÃO: NEWSLETTER / INSCRIÇÃO -->
       <div id="gtco-subscribe">
         <div class="gtco-container">
           <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-              <h2 class="cursive-font">Se inscrever</h2>
-              <p>Receba as novidades do nosso restaurante</p>
+              <h2 class="cursive-font">Novidades e Ofertas</h2>
+              <p>Inscreva seu e-mail e receba convites para eventos gastronômicos e cupons exclusivos.</p>
             </div>
           </div>
           <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2">
-              <form class="form-inline">
+              <form class="form-inline" action="#" method="POST">
                 <div class="col-md-6 col-sm-6">
                   <div class="form-group">
                     <label for="email" class="sr-only">E-mail</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Seu E-mail"
-                    />
+                    <input type="email" class="form-control" id="email" placeholder="Seu melhor e-mail" required />
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                  <button type="submit" class="btn btn-default btn-block">
-                    Inscrever
-                  </button>
+                  <button type="submit" class="btn btn-default btn-block">Inscrever-se</button>
                 </div>
               </form>
             </div>
@@ -503,70 +329,38 @@
         </div>
       </div>
 
-      <footer
-        id="gtco-footer"
-        role="contentinfo"
-        style="background-image: url(images/img_bg_1.jpg)"
-        data-stellar-background-ratio="0.5"
-      >
+      <!-- FOOTER / RODAPÉ -->
+      <footer id="gtco-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="gtco-container">
           <div class="row row-pb-md">
             <div class="col-md-12 text-center">
+              
               <div class="gtco-widget">
-                <h3>Entrar em Contato</h3>
+                <h3>Canais de Atendimento</h3>
                 <ul class="gtco-quick-contact">
-                  <li>
-                    <a href="#"> <i class="icon-phone"></i> +55 27 9.9655-9697</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="icon-mail2"></i>
-                      contato@leogomesdev.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"> <i class="icon-chat"></i> Chat</a>
-                  </li>
+                  <li><a href="tel:+5527996559697"><i class="icon-phone"></i> +55 (27) 99655-9697</a></li>
+                  <li><a href="mailto:contato@leogomesdev.com"><i class="icon-mail2"></i> contato@leogomesdev.com</a></li>
+                  <li><a href="#"><i class="icon-chat"></i> Suporte via Chat</a></li>
                 </ul>
               </div>
+              
               <div class="gtco-widget">
-                <h3>Redes Sociais</h3>
+                <h3>Conecte-se Conosco</h3>
                 <ul class="gtco-social-icons">
-                  <li>
-                    <a href="https://leogomesdev.com">
-                      <i class="icon-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://leogomesdev.com">
-                      <i class="icon-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://leogomesdev.com">
-                      <i class="icon-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://leogomesdev.com">
-                      <i class="icon-youtube"></i>
-                    </a>
-                  </li>
+                  <li><a href="https://leogomesdev.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter do desenvolvedor"><i class="icon-twitter"></i></a></li>
+                  <li><a href="https://leogomesdev.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook do desenvolvedor"><i class="icon-facebook"></i></a></li>
+                  <li><a href="https://leogomesdev.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn do desenvolvedor"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="https://leogomesdev.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube do desenvolvedor"><i class="icon-youtube"></i></a></li>
                 </ul>
               </div>
-            </div>
 
             <div class="col-md-12 text-center copyright">
               <p>
-                <small class="block"
-                  >&copy; 2018 Leo Gomes. Todos os Direitos Reservados.</small
-                >
-                <small class="block"
-                  >Desenvolvido por
-                  <a href="https://leogomesdev.com" target="_blank"
-                    >Leo Gomes</a
-                  >
+                <small class="block">&copy; 2026 Saboroso Restaurante. Todos os Direitos Reservados.</small>
+                <small class="block">
+                  Desenvolvido por 
+                  <a href="https://leogomesdev.com" target="_blank" rel="noopener noreferrer">Leo Gomes</a>
                 </small>
               </p>
             </div>
@@ -575,36 +369,25 @@
       </footer>
     </div>
 
+    <!-- Seta para voltar ao topo -->
     <div class="gototop js-top">
-      <a href="#" class="js-gotop">
-        <i class="icon-arrow-up"></i>
-      </a>
+      <a href="#" class="js-gotop" aria-label="Voltar ao topo da página"><i class="icon-arrow-up"></i></a>
     </div>
 
-    <!-- jQuery -->
+    <!-- Scripts e Bibliotecas JS do Projeto -->
     <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
     <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Carousel -->
     <script src="js/owl.carousel.min.js"></script>
-    <!-- countTo -->
     <script src="js/jquery.countTo.js"></script>
-
-    <!-- Stellar Parallax -->
     <script src="js/jquery.stellar.min.js"></script>
-
-    <!-- Magnific Popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
-
     <script src="js/moment.min.js"></script>
     <script src="js/bootstrap-datetimepicker.min.js"></script>
-
-    <!-- Main -->
+    
+    <!-- Script principal de animações -->
     <script src="js/main.js"></script>
   </body>
 </html>
