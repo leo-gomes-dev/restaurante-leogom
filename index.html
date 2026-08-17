@@ -39,6 +39,32 @@
   </head>
 
   <body>
+        <!-- MODAL INFORMATIVO: PROJETO DEMO -->
+    <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="margin-top: 15vh;">
+        <div class="modal-content" style="border-radius: 16px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+          
+          <div class="modal-header" style="border-bottom: 1px solid #f2f2f2; padding: 20px 25px; color: #FBB448;">
+            <h3 class="modal-title cursive-font" id="demoModalLabel" style="font-size: 28px; margin: 0; display: inline-block;">
+              <i class="ti-alert" style="margin-right: 10px; font-weight: bold;"></i> Projeto de Demonstração
+            </h3>
+          </div>
+          
+          <div class="modal-body" style="padding: 25px; color: #666; font-size: 15px; line-height: 1.6;">
+            <p>Este site é um <strong>ambiente de testes (Demo)</strong> desenvolvido exclusivamente para fins de estudo e composição de portfólio técnico.</p>
+            <p style="margin-bottom: 0;">Todas as informações, preços, cardápios e o sistema de reserva de mesas exibidos aqui são fictícios, criados para demonstrar habilidades em desenvolvimento front-end e design de interface.</p>
+          </div>
+          
+          <div class="modal-footer" style="border-top: 1px solid #f2f2f2; padding: 15px 25px;">
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" style="background: #FBB448; border-color: #FBB448; border-radius: 8px; font-weight: bold; padding: 12px; font-size: 16px; transition: all 0.3s;">
+              Entendi e Quero Explorar
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="gtco-loader"></div>
 
     <div id="page">
@@ -389,5 +415,13 @@
     
     <!-- Script principal de animações -->
     <script src="js/main.js"></script>
+        <!-- Script para auto-disparo do Modal Demo -->
+    <script>
+      $(document).ready(function() {
+        // Dispara o modal automaticamente assim que o DOM estiver pronto
+        $('#demoModal').modal('show');
+      });
+    </script>
+
   </body>
 </html>
