@@ -48,7 +48,7 @@ O sistema conta com um módulo exclusivo de administração isolado da interface
 
 1. Clone o repositório em sua máquina:
    ```bash
-   git clone https://github.com
+   git clone [https://github.com](https://github.com/leo-gomes-dev/restaurante-leogom.git)
    ```
 2. **Configuração do Banco de Dados:**
    * Importe o arquivo `mysql.sql` no seu gerenciador MySQL local (como phpMyAdmin, MySQL Workbench ou Docker).
