@@ -2,7 +2,7 @@
 
 Um sistema Full Stack completo, responsivo e modular desenvolvido para a automação de serviços, gerenciamento de cardápios, reservas de mesas e administração interna de um estabelecimento gastronômico.
 
-⚡ **Link do Projeto (Demonstração):** [Acesse o Deploy](https://vercel.app)
+⚡ **Link do Projeto (Demonstração):** [Acesse o Deploy]([https://vercel.app](https://restaurante-rho-orcin.vercel.app/))
 
 ---
 
